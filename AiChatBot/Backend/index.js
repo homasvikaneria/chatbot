@@ -12,11 +12,11 @@ app.use(cors({
   allowedHeaders: ["Content-Type"],
 }));
 
-const uri = "mongodb+srv://test:test123@cluster0.mjyfw.mongodb.net/"; // MongoDB URI
+const uri = "xyz"; // MongoDB URI
 const client = new MongoClient(uri);
 const dbName = "just_home"; // Database name
 
-const GEMINI_API_KEY = "AIzaSyAyz1XB88dlQE_bJAO8adqvtMoBeSoNOIA";
+const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY";
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
